@@ -14,8 +14,12 @@ const primeiraPergunta = [
                 value: 1,
             },
             {
-                name: 'Buscar pet por nome',
+                name: 'Buscar pet por nome do pet',
                 value: 2
+            },
+            {
+                name: 'Buscar pet por nome do dono',
+                value: 3
             },
         ]
     }
@@ -49,8 +53,17 @@ const buscarPetCadastrado =[
     }
 ]
 
+const buscarDonoCadastrado =[
+    {
+        type: 'input',
+        name: 'buscarDono',
+        message: 'Qual o nome do dono que você deseja buscar?'
+    }
+]
+
 module.exports = {
     primeiraPergunta,
     cadastrarPet,
     buscarPetCadastrado,
+    buscarDonoCadastrado
 }
